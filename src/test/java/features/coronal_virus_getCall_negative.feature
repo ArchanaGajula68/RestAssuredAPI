@@ -1,9 +1,8 @@
-Feature:
-  verify Get operations using Rest Assured
+Feature:verify Get operations using Rest Assured
   Background: This the background for below scenarios
 
 # negative scenario
-  @negative
+  @regression
   Scenario Outline: verify status code using Examples section below
     Given Get call to <url>
     Then response is <statusCode>

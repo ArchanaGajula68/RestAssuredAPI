@@ -1,11 +1,10 @@
-Feature:
-  verify Get operations using Rest Assured
+Feature:verify Get operations using Rest Assured
   Background: This the background for below scenarios
-  @regression
+  @regression @smoke
   Scenario Outline: verify coronavirus live data using Examples section below
     Given Get call to <url>
-    Then response is <statusCode>
-    And verify the schema of the response
+    When response is <statusCode>
+    Then verify the schema of the response
     And verify the area name <areaName>
     And verify the area code <areaCode>
     And Verify the date given <date>

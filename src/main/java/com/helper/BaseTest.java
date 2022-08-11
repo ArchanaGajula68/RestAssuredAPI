@@ -8,6 +8,7 @@ import java.util.Properties;
 public class BaseTest {
     public static Properties prop;
 
+
     public static void init(){
         prop = new Properties();
         try {
